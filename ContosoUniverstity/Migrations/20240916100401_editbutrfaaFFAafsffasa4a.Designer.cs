@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ContosoUniverstity.Migrations
 {
     [DbContext(typeof(SchoolContext))]
-    [Migration("20240912074756_00165")]
-    partial class _00165
+    [Migration("20240916100401_editbutrfaaFFAafsffasa4a")]
+    partial class editbutrfaaFFAafsffasa4a
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -62,7 +62,7 @@ namespace ContosoUniverstity.Migrations
 
                     b.HasIndex("InstructorId");
 
-                    b.ToTable("CourseAssignment");
+                    b.ToTable("CourseAssignment", (string)null);
                 });
 
             modelBuilder.Entity("ContosoUniverstity.Models.Enrollment", b =>
@@ -124,7 +124,7 @@ namespace ContosoUniverstity.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Instructors");
+                    b.ToTable("Instructor", (string)null);
                 });
 
             modelBuilder.Entity("ContosoUniverstity.Models.OfficeAssignment", b =>
@@ -139,7 +139,7 @@ namespace ContosoUniverstity.Migrations
 
                     b.HasKey("InstructorId");
 
-                    b.ToTable("OfficeAssignment");
+                    b.ToTable("OfficeAssignment", (string)null);
                 });
 
             modelBuilder.Entity("ContosoUniverstity.Models.Student", b =>
