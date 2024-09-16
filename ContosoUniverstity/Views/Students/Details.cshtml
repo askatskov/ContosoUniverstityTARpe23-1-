@@ -1,0 +1,35 @@
+﻿@model ContosoUniverstity.Models.Student
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Student data</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2"> @Html.DisplayNameFor(Model => Model.LastName)</dt>
+    </dl>
+    <dl class="row">
+        <dt class="col-sm-10"> @Html.DisplayFor(Model => Model.LastName)</dt>
+    </dl>
+    <dl class="row">
+        <dt class="col-sm-2"> @Html.DisplayNameFor(Model => Model.FirstMidName)</dt>
+    </dl>
+    <dl class="row">
+        <dt class="col-sm-10"> @Html.DisplayFor(Model => Model.FirstMidName)</dt>
+    </dl>
+    <dl class="row">
+        <dt class="col-sm-2"> @Html.DisplayNameFor(Model => Model.EnrollmentDate)</dt>
+    </dl>
+    <dl class="row">
+        <dt class="col-sm-10"> @Html.DisplayFor(Model => Model.EnrollmentDate)</dt>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a>
+    @*<a asp-action="Clone" asp-route-id="@Model.Id">Duplicate</a>*@
+    <a asp-action="Index">Back To List</a>
+</div>
