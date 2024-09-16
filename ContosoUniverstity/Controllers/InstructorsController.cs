@@ -240,6 +240,57 @@ namespace ContosoUniverstity.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        [HttpGet]
+        public async Task<IActionResult> Clone(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var instructor = await _context.Instructors
+                .Include(i => i.OfficeAssignment)
+                .Include(i => i.CourseAssignments)
+                .ThenInclude(ca => ca.Course)
+                .FirstOrDefaultAsync(i => i.Id == id);
+
+            if (instructor == null)
+            {
+                return NotFound();
+            }
+
+            var newInstructor = new Instructor
+            {
+                FirstMidName = instructor.FirstMidName,
+                LastName = instructor.LastName,
+                HireDate = instructor.HireDate,
+                OfficeAssignment = instructor.OfficeAssignment != null
+                    ? new OfficeAssignment { Location = instructor.OfficeAssignment.Location }
+                    : null,
+                CourseAssignments = instructor.CourseAssignments
+                    .Select(ca => new CourseAssignment
+                    {
+                        CourseId = ca.CourseId
+                    }).ToList()
+            };
+
+            _context.Add(newInstructor);
+            await _context.SaveChangesAsync();
+
+            foreach (var courseAssignment in instructor.CourseAssignments)
+            {
+                _context.CourseAssignments.Add(new CourseAssignment
+                {
+                    InstructorId = newInstructor.Id,
+                    CourseId = courseAssignment.CourseId
+                });
+            }
+
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
+        }
+
         private bool InstructorExists(int id)
         {
             return _context.Instructors.Any(e => e.Id == id);
