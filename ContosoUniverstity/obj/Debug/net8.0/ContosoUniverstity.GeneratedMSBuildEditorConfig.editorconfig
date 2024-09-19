@@ -9,75 +9,87 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ContosoUniverstity
 build_property.RootNamespace = ContosoUniverstity
-build_property.ProjectDir = C:\Users\awesa\Downloads\ContosoUniverstityTARpe23-master\ContosoUniverstityTARpe23-master\ContosoUniverstity\
+build_property.ProjectDir = C:\Users\opilane\Source\Repos\ContosoUniverstityTARpe23-1-\ContosoUniverstity\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\awesa\Downloads\ContosoUniverstityTARpe23-master\ContosoUniverstityTARpe23-master\ContosoUniverstity
+build_property.MSBuildProjectDirectory = C:\Users\opilane\Source\Repos\ContosoUniverstityTARpe23-1-\ContosoUniverstity
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/awesa/Downloads/ContosoUniverstityTARpe23-master/ContosoUniverstityTARpe23-master/ContosoUniverstity/Views/Home/Index.cshtml]
+[C:/Users/opilane/Source/Repos/ContosoUniverstityTARpe23-1-/ContosoUniverstity/Views/Grades/EditGrade.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JhZGVzXEVkaXRHcmFkZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/opilane/Source/Repos/ContosoUniverstityTARpe23-1-/ContosoUniverstity/Views/Grades/StudentCourses.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JhZGVzXFN0dWRlbnRDb3Vyc2VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/opilane/Source/Repos/ContosoUniverstityTARpe23-1-/ContosoUniverstity/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awesa/Downloads/ContosoUniverstityTARpe23-master/ContosoUniverstityTARpe23-master/ContosoUniverstity/Views/Home/Privacy.cshtml]
+[C:/Users/opilane/Source/Repos/ContosoUniverstityTARpe23-1-/ContosoUniverstity/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awesa/Downloads/ContosoUniverstityTARpe23-master/ContosoUniverstityTARpe23-master/ContosoUniverstity/Views/Instructors/Create.cshtml]
+[C:/Users/opilane/Source/Repos/ContosoUniverstityTARpe23-1-/ContosoUniverstity/Views/Instructors/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvcnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awesa/Downloads/ContosoUniverstityTARpe23-master/ContosoUniverstityTARpe23-master/ContosoUniverstity/Views/Instructors/Delete.cshtml]
+[C:/Users/opilane/Source/Repos/ContosoUniverstityTARpe23-1-/ContosoUniverstity/Views/Instructors/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvcnNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awesa/Downloads/ContosoUniverstityTARpe23-master/ContosoUniverstityTARpe23-master/ContosoUniverstity/Views/Instructors/Edit.cshtml]
+[C:/Users/opilane/Source/Repos/ContosoUniverstityTARpe23-1-/ContosoUniverstity/Views/Instructors/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvcnNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awesa/Downloads/ContosoUniverstityTARpe23-master/ContosoUniverstityTARpe23-master/ContosoUniverstity/Views/Instructors/Index.cshtml]
+[C:/Users/opilane/Source/Repos/ContosoUniverstityTARpe23-1-/ContosoUniverstity/Views/Instructors/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awesa/Downloads/ContosoUniverstityTARpe23-master/ContosoUniverstityTARpe23-master/ContosoUniverstity/Views/Shared/Error.cshtml]
+[C:/Users/opilane/Source/Repos/ContosoUniverstityTARpe23-1-/ContosoUniverstity/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awesa/Downloads/ContosoUniverstityTARpe23-master/ContosoUniverstityTARpe23-master/ContosoUniverstity/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/opilane/Source/Repos/ContosoUniverstityTARpe23-1-/ContosoUniverstity/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awesa/Downloads/ContosoUniverstityTARpe23-master/ContosoUniverstityTARpe23-master/ContosoUniverstity/Views/Students/Create.cshtml]
+[C:/Users/opilane/Source/Repos/ContosoUniverstityTARpe23-1-/ContosoUniverstity/Views/Students/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awesa/Downloads/ContosoUniverstityTARpe23-master/ContosoUniverstityTARpe23-master/ContosoUniverstity/Views/Students/Delete.cshtml]
+[C:/Users/opilane/Source/Repos/ContosoUniverstityTARpe23-1-/ContosoUniverstity/Views/Students/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awesa/Downloads/ContosoUniverstityTARpe23-master/ContosoUniverstityTARpe23-master/ContosoUniverstity/Views/Students/Details.cshtml]
+[C:/Users/opilane/Source/Repos/ContosoUniverstityTARpe23-1-/ContosoUniverstity/Views/Students/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awesa/Downloads/ContosoUniverstityTARpe23-master/ContosoUniverstityTARpe23-master/ContosoUniverstity/Views/Students/Edit.cshtml]
+[C:/Users/opilane/Source/Repos/ContosoUniverstityTARpe23-1-/ContosoUniverstity/Views/Students/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awesa/Downloads/ContosoUniverstityTARpe23-master/ContosoUniverstityTARpe23-master/ContosoUniverstity/Views/Students/Index.cshtml]
+[C:/Users/opilane/Source/Repos/ContosoUniverstityTARpe23-1-/ContosoUniverstity/Views/Students/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awesa/Downloads/ContosoUniverstityTARpe23-master/ContosoUniverstityTARpe23-master/ContosoUniverstity/Views/_ViewImports.cshtml]
+[C:/Users/opilane/Source/Repos/ContosoUniverstityTARpe23-1-/ContosoUniverstity/Views/Students/ManageGrades.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcTWFuYWdlR3JhZGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/opilane/Source/Repos/ContosoUniverstityTARpe23-1-/ContosoUniverstity/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awesa/Downloads/ContosoUniverstityTARpe23-master/ContosoUniverstityTARpe23-master/ContosoUniverstity/Views/_ViewStart.cshtml]
+[C:/Users/opilane/Source/Repos/ContosoUniverstityTARpe23-1-/ContosoUniverstity/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awesa/Downloads/ContosoUniverstityTARpe23-master/ContosoUniverstityTARpe23-master/ContosoUniverstity/Views/Shared/_Layout.cshtml]
+[C:/Users/opilane/Source/Repos/ContosoUniverstityTARpe23-1-/ContosoUniverstity/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-eqvli85qvz

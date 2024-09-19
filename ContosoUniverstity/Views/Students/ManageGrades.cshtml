@@ -1,0 +1,42 @@
+﻿@model IEnumerable<ContosoUniverstity.Models.Student>
+
+@{
+    ViewData["Title"] = "Manage Grades";
+}
+
+<h2>Manage Student Grades</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Student</th>
+            <th>Courses</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Model)
+        {
+            <tr>
+                <td>
+                    <!-- Student name links to their courses -->
+                    <a asp-controller="Grades" asp-action="StudentCourses" asp-route-studentId="@student.Id">
+                        @student.LastName, @student.FirstMidName
+                    </a>
+                </td>
+                <td>
+                    <ul>
+                        @foreach (var enrollment in student.Enrollments)
+                        {
+                            <li>
+                                <!-- Course name links to grade editing -->
+                                <a asp-controller="Grades" asp-action="EditGrade" asp-route-enrollmentId="@enrollment.EnrollmentID">
+                                    @enrollment.Course.Title
+                                </a>
+                            </li>
+                        }
+                    </ul>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,31 @@
+﻿@model ContosoUniverstity.Models.Student
+
+@{
+    ViewData["Title"] = "Student Courses";
+}
+
+<h2>Courses for @Model.LastName, @Model.FirstMidName</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Course</th>
+            <th>Grade</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var enrollment in Model.Enrollments)
+        {
+            <tr>
+                <td>
+                    @enrollment.Course.Title
+                </td>
+                <td>
+                    <a asp-controller="Grades" asp-action="EditGrade" asp-route-enrollmentId="@enrollment.EnrollmentID">
+                        @enrollment.Grade
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

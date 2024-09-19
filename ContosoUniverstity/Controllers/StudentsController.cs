@@ -17,8 +17,15 @@ namespace ContosoUniverstity.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Students.ToListAsync());
+            var students = await _context.Students
+                .Include(s => s.Enrollments)
+                    .ThenInclude(e => e.Course)
+                .AsNoTracking()
+                .ToListAsync();
+
+            return View(students);
         }
+
 
         /*
         public async Task<IActionResult> Index(
@@ -158,6 +165,17 @@ namespace ContosoUniverstity.Controllers
                 return NotFound();
             }
             return View(student);
+        }
+
+        public async Task<IActionResult> ManageGrades()
+        {
+            var students = await _context.Students
+                .Include(s => s.Enrollments)
+                    .ThenInclude(e => e.Course)
+                .AsNoTracking()
+                .ToListAsync();
+
+            return View(students);
         }
 
         [HttpPost]

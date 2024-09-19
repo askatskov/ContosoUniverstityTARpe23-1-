@@ -1,4 +1,5 @@
-﻿using ContosoUniverstity.Data;
+﻿
+using ContosoUniverstity.Data;
 using ContosoUniverstity.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
