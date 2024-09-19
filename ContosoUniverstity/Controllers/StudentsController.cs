@@ -240,3 +240,4 @@ namespace ContosoUniverstity.Controllers
 
     }
 }
+// Lisasin siia kommentaari sest viimased muudetused edit ja clone buttoniks olid tehtud siin
