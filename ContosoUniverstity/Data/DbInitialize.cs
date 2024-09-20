@@ -73,6 +73,20 @@ namespace ContosoUniverstity.Data
             // Add enrollments to the context and save the changes
             context.Enrollments.AddRange(enrollments);
             context.SaveChanges();
+
+            if (context.Instructors.Any()) { return; }
+            var instructors = new Instructor[]
+            {
+                new Instructor
+                {
+                    LastName = "ÖGER",
+                    FirstMidName = "Shrenk",
+                    HireDate = DateTime.Parse("2069-04-20"),
+                    Mood = Mood.HighAF,
+                    VocationCredential = "Professional Ogre",
+                    WorkYears = 45
+                },
+            };
         }
     }
 }
