@@ -82,9 +82,6 @@ namespace ContosoUniverstity.Data
                     LastName = "ÖGER",
                     FirstMidName = "Shrenk",
                     HireDate = DateTime.Parse("2069-04-20"),
-                    Mood = Mood.HighAF,
-                    VocationCredential = "Professional Ogre",
-                    WorkYears = 45
                 },
             };
         }
