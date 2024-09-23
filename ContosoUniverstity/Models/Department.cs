@@ -21,7 +21,7 @@ namespace ContosoUniverstity.Models
 
 
         public Student? Status {  get; set; }
-        [Display(Name = "Ancient scrolls which tell the tale of creation of this damned place.")]
+        [Display(Name = "Status")]
 
         public string Aadress { get; set; }
 
@@ -30,7 +30,7 @@ namespace ContosoUniverstity.Models
 
         public byte? RowVersion { get; set; }
 
-        public Instructor? Administrator { get; set; }
+        public InstructorExists? Administrator { get; set; }
 
         public ICollection<Course>? Courses { get; set; }
     }

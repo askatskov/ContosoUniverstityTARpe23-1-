@@ -75,15 +75,42 @@ namespace ContosoUniverstity.Data
             context.SaveChanges();
 
             if (context.Instructors.Any()) { return; }
-            var instructors = new Instructor[]
+            var instructors = new InstructorExists[]
             {
-                new Instructor
+                new InstructorExists
                 {
                     LastName = "ÖGER",
                     FirstMidName = "Shrenk",
                     HireDate = DateTime.Parse("2069-04-20"),
                 },
             };
+            context.Instructors.AddRange(instructors);
+            context.SaveChanges();
+
+            if (context.Departments.Any()) { return; }
+            var departments = new Department[]
+            {
+                new Department
+                {
+                    Name = "InfoTechnology",
+                    Budget = 0,
+                    StartDate = DateTime.Parse("2024/09/01"),
+                    Aadress = "Adre",
+                    InstructorID = 2,
+
+                },
+                new Department
+                {
+                    Name = "TechnolohyInfo",
+                    Budget = 0,
+                    StartDate = DateTime.Parse("2024/01/09"),
+                    Aadress = "erdA",
+                    InstructorID = 1,
+
+                },
+            };
+            context.Departments.AddRange(departments);
+            context.SaveChanges();
         }
     }
 }

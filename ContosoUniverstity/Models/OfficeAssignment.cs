@@ -6,7 +6,7 @@ namespace ContosoUniverstity.Models
     {
         [Key]
         public int InstructorId { get; set; }
-        public Instructor? Instructor { get; set; }
+        public InstructorExists? Instructor { get; set; }
         [StringLength(50)]
         [Display(Name = "Office Location")]
         public string Location { get; set;}

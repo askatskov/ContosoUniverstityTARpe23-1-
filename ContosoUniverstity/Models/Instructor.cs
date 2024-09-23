@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ContosoUniverstity.Models
 {
-    public class Instructor
+    public class InstructorExists
     {
         [Key]
         public int Id { get; set; }

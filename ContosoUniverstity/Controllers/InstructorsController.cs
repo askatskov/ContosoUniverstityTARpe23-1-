@@ -70,7 +70,7 @@ namespace ContosoUniverstity.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Instructor instructor, int[] selectedCourses)
+        public async Task<IActionResult> Create(InstructorExists instructor, int[] selectedCourses)
         {
             if (ModelState.IsValid)
             {
@@ -95,7 +95,7 @@ namespace ContosoUniverstity.Controllers
             return View(instructor);
         }
 
-        private void PopulateAssignedCourseData(Instructor instructor)
+        private void PopulateAssignedCourseData(InstructorExists instructor)
         {
             var allCourses = _context.Courses.ToList();
             var instructorCourses = new HashSet<int>(instructor?.CourseAssignments.Select(ca => ca.CourseId) ?? Enumerable.Empty<int>());
@@ -134,7 +134,7 @@ namespace ContosoUniverstity.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, Instructor instructor, int[] selectedCourses)
+        public async Task<IActionResult> Edit(int id, InstructorExists instructor, int[] selectedCourses)
         {
             if (id != instructor.Id)
             {
@@ -260,7 +260,7 @@ namespace ContosoUniverstity.Controllers
                 return NotFound();
             }
 
-            var newInstructor = new Instructor
+            var newInstructor = new InstructorExists
             {
                 FirstMidName = instructor.FirstMidName,
                 LastName = instructor.LastName,

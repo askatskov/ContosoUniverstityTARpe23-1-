@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ContosoUniverstity.Data;
+using Microsoft.EntityFrameworkCore;
+using ContosoUniverstity.Migrations;
 
 namespace ContosoUniverstity.Controllers
 {
@@ -11,9 +13,10 @@ namespace ContosoUniverstity.Controllers
         {
             _context = context;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var schoolContext = _context.Departments.Include(d => d.Administrator);
+            return View(await schoolContext.ToListAsync());
         }
     }
 }
